@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #141313;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-header {
+    background-color: #e4002b;
+    color: white;
+    padding: 10px 0;
+}
+
+.delivery-info {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.delivery-number {
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+.main-header {
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.kfc-logo {
+    width: 80px;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #202124;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e4002b;
+}
+
+.order-btn {
+    background-color: #e4002b;
+    color: white !important;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 800;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #c20024;
+}
+
+.carousel-section {
+    margin-top: 0;
+    background-color: #000000;
+}
+
+.carousel-item {
+    height: 600px;
+    position: relative;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.carousel-title {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn {
+    background-color: #e4002b;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.carousel-btn:hover {
+    background-color: #c20024;
+    transform: scale(1.05);
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #e4002b;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.deals-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    color: #202124;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #e4002b;
+}
+
+.deal-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.deal-card:hover {
+    transform: translateY(-10px);
+}
+
+.deal-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.deal-content {
+    padding: 20px;
+}
+
+.deal-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #202124;
+    margin-bottom: 10px;
+}
+
+.deal-price {
+    font-size: 28px;
+    font-weight: 900;
+    color: #e4002b;
+    margin-bottom: 15px;
+}
+
+.deal-btn {
+    width: 100%;
+    background-color: #e4002b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deal-btn:hover {
+    background-color: #c20024;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-img {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #202124;
+    margin-bottom: 20px;
+}
+
+.about-title span {
+    color: #e4002b;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #202124;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #e4002b;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e4002b;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e4002b;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 40px;
+    }
+
+    .carousel-subtitle {
+        font-size: 18px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
